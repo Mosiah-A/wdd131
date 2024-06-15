@@ -3,6 +3,7 @@
     box-sizing: border-box;
     margin: auto;
     font-family: 'Poppins', sans-serif;
+    max-width: 300rem;
 }
 header{
     display: flex;
