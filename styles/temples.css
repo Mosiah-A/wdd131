@@ -39,18 +39,12 @@ h2{
     background-color: #bbb;
     color: #333;
 }
-main{
+main div{
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
 }
-main div{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: 1.5rem;
-}
-main img{
+main div img{
     max-width: 450px;
     min-width: 250px;
     margin: 20px;
@@ -62,6 +56,13 @@ footer{
     color: aliceblue;
     height: 4rem;
     padding: 20px;
+}
+figure{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    font-size: 1.5rem;
+
 }
 @media (max-width: 70rem) {
    
