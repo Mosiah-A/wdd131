@@ -88,7 +88,7 @@ footer{
     flex-direction: row;
 }
 
-#weather img{
+#weather img, #weather-small img{
     display: block;
     width: 5vw;
 }
@@ -117,14 +117,20 @@ footer{
     #box-data, #box-weather, .box ul {
         position: initial;
         width: 100%;
+        padding-right: 2vw;
+
     }
     #weather, #data{
         display: none;
+
+
     }
     #weather-small, #data-small{
         margin-top: 2rem;
-        display: block;
+        display: flex;
+        flex-direction: column;
         text-align: center;
+        align-items: center;
     }
     footer{
         text-align: center;
@@ -136,8 +142,12 @@ footer{
         font-size: 2vh;
         bottom: -6rem;
     }
+   
     #weather-small::after{
-        content: url(http://www.w3.org/2000/svg);
-        
+        content: url('/images/weather.svg');
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+        width: 25vw;
     }
 }
