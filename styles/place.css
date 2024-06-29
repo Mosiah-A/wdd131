@@ -84,6 +84,13 @@ footer{
     height: 6vw;
     top: 48vh;
     right: 12vw;
+    display: flex;
+    flex-direction: row;
+}
+
+#weather img{
+    display: block;
+    width: 5vw;
 }
 .box ul{
     position: absolute;
@@ -128,5 +135,9 @@ footer{
         padding: 2vh;
         font-size: 2vh;
         bottom: -6rem;
+    }
+    #weather-small::after{
+        content: url(http://www.w3.org/2000/svg);
+        
     }
 }
