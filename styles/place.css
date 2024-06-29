@@ -99,14 +99,12 @@ footer{
     font-size: 1.3vw;
     text-align: center;
     width: 100%;
-    
+    list-style-type: none;
 }
-.box p{
+.box li{
     margin-top: 0.5rem;
 }
-.box span{
-    font-weight: bolder;
-}
+
 #weather-small, #data-small{
     display: none;
 }
