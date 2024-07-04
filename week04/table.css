@@ -1,0 +1,52 @@
+:root {  
+	--shadow: hsl(0,0%,50%);
+}
+body{
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+table,th, tfoot, tr, td{
+    height: 30px;
+    width: 500px;
+    text-align: center;
+
+}
+table{
+    box-shadow: 0 0 10px var(--shadow);
+    border-collapse:collapse ;
+
+}
+thead th:not(:first-child){
+    background-color: rgb(59, 59, 59);
+}
+thead{
+    background-color: black;
+    color: white;
+}
+tbody tr, tbody td{
+    background-color: white;
+    border: solid rgba(0, 0, 0, 0.1) 1px;
+}
+th, td{
+    height: 50px;
+}
+caption{
+    caption-side: bottom;
+}
+
+td:not(.marked):nth-child(1n+2)::after{
+    content: '❌' ;
+}
+.marked:nth-child(1n+2)::after{
+    content: '✔️' ;
+}
+tbody tr:nth-child(even){
+    background-color: rgba(231, 230, 228, 0.925);
+}
+td:first-child{
+    font-weight: bold;
+}

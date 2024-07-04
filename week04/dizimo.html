@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="dizimo.css">
+    <script src="dizimo.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <h2>Tithing and Other Offerings</h2>
+        <hr>
+        <div class="date-info">
+            <span id="date"></span>
+            <div class="membership-info">
+                <p>Spanish Fork Utah Palmyra Stake</p>
+                <p>Legacy Farms 4th Ward</p>
+                <p>United States</p>
+            </div>
+        </div>
+        <div class="membership-number">
+            <label for="membership-record-number">Membership Record Number:</label>
+            <span id="membership-record-number">123-456-7890</span>
+        </div>
+        <hr>
+        <div class="offerings">
+            <div class="offering">
+                <label for="tithing">Tithing</label>
+                <input type="number" id="tithing" value="0.00">
+            </div>
+            <div class="offering">
+                <label for="fast-offerings">Fast Offerings</label>
+                <input type="number" id="fast-offerings" value="0.00">
+            </div>
+            <div class="offering">
+                <label for="general-missionary">General Missionary</label>
+                <input type="number" id="general-missionary" value="0.00">
+            </div>
+            <div class="offering">
+                <div id="wm">
+                    <label for="ward-missionary">Ward Missionary</label>
+                    <select id="ward-missionary">
+                        <option value="" disabled selected>Select a missionary ...</option>
+                        <option value="missionary 1" >missionary 1</option>
+                        <option value="missionary 2" >missionary 2</option>
+                        <option value="missionary 3" >missionary 3</option>
+                        <option value="missionary 4" >missionary 4</option>
+                    </select>
+                </div>
+                
+                <input type="number" id="ward-missionary" value="0.00">
+            </div>
+            <div class="offering">
+                <label for="humanitarian-aid">Humanitarian Aid</label>
+                <input type="number" id="humanitarian-aid" value="0.00">
+            </div>
+            <div class="offering">
+                <label for="general-offerings">General Offerings</label>
+                <input type="number" id="general-offerings" value="0.00">
+            </div>
+        </div>
+        <hr>
+        <div class="total">
+            <p>Total</p>
+            <span>$0.00</span>
+        </div>
+        <p class="disclaimer">
+            All donations to the Church are free-will offerings and become the Church’s property. In furtherance of its overall mission, the Church may shift donations from any designated use to other uses, at its sole discretion.
+        </p>
+        <div class="buttons">
+            <button class="clear">Clear</button>
+            <button class="next-step">Next Step</button>
+        </div>
+        <p class="personal-note">
+            <a href="#">Personal Note</a>
+        </p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,61 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f9f9f9;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+}
+
+.container {
+    background-color: white;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    padding: 20px;
+    width: 500px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+h2 {
+    text-align: center;
+    color: #333;
+}
+
+hr {
+    border: none;
+    border-top: 1px solid #ccc;
+    margin: 10px 0;
+}
+
+.date-info, .membership-number, .offerings, .total, .disclaimer, .buttons, .personal-note {
+    margin-bottom: 10px;
+}
+.membership-number{
+    display: flex;
+    flex-direction: column;
+}
+.offerings{
+    display: flex;
+    flex-direction: column;
+}
+.offerings div{
+    display: flex;
+    flex-direction: row;
+}
+.offerings div label, .offerings div input, .offerings div select{
+    width: 50%;
+    height: 30px;
+    margin: 5px;
+}
+.date-info {
+    display: flex;
+    justify-content: space-between;}
+
+#wm{
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    height: 60px;
+    margin: 5px;
+}
