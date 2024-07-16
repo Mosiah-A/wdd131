@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form - Mosiah Andrade</title>
+    <script src="scripts/form.js" defer></script>
+    <link rel="stylesheet" href="styles/form.css">
+</head>
+<body>
+    <main>
+        <h1>Product Review</h1>
+        <form action="review.html"" method="get">
+            <div id="productBox">
+                <label for="product"> Product Name *</label>
+                <select name="product" id="product" required>
+                    <option disabled selected value=""> Select a Product</option>
+                </select>
+            </div>
+            
+            
+            <label for="overall">Overall rating *</label>
+            <div id="overall">
+                <div>
+
+                    <label for="1star"> &star; </label>
+                    <input type="radio" name="rating" id="1star" value="1" required>
+        
+                </div>
+                <div>
+                    <label for="2star"> &star;&star;</label>
+                    <input type="radio" name="rating" id="2star" value="2" required>    
+                </div>
+                <div>
+                    <label for="3star"> &star;&star; &star;</label>
+                    <input type="radio" name="rating" id="3star" value="3" required>
+                </div>
+                
+                <div>
+                    <label for="4star"> &star;&star; &star;&star;</label>
+                    <input type="radio" name="rating" id="4star" value="4" required>
+                </div>
+                
+                <div>
+                    <label for="5star"> &star;&star; &star;&star; &star;</label>
+                    <input type="radio" name="rating" id="5star" value="5" required>
+        
+                </div>
+                
+            </div>
+            <div id="dateBox">
+                <label for="date">Date of Instalation *</label>
+                <input type="date" name="date" id="date" required>
+            </div>
+            <div id="feature" >
+                <label for="checkbox">Which Feature did you find useful in the product?</label>
+                <span>(Check all that apply)</span>
+                <div>
+                    <input type="checkbox" name="features[]" id="Durability" value="Durability">
+                    <label for="Durability">Durability</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="features[]" id="Ease" value="Ease of Use">
+                    <label for="Ease">Ease of Use</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="features[]" id="Performance" value="Performance">
+                    <label for="Performance">Performance</label>
+                </div>
+                <div>
+                    <input type="checkbox" name="features[]" id="Design" value="Design">
+                    <label for="Design">Design</label>
+                </div>
+            </div>
+            <div id="textareaBox">
+                <label for="textarea">Written Review <span>(Optional)</span></label>
+                <textarea name="textarea" id="textarea" rows="8" ></textarea>
+            </div>
+            <div id="usernameBox">
+                <label for="userName">User Name <span>(Optional)</span></label>
+                <input type="text" id="username" >
+            </div>
+            <div id="submit">
+                <input type="submit" value="Send the Review">
+            </div>
+            
+        </form>
+    </main>
+
+    <footer>
+        <p><span id="currentYear"></span>  Mosiah Andrade</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
