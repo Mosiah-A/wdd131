@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mosiah's Gym</title>
+    <meta name="Author" content="Mosiah Assunção Andrade">
+    <meta name="description" content="a landing page about mosiah's Gym">
+    <link rel="stylesheet" href="styles/index.css">
+    <script src="scripts/index.js" defer></script>
+</head>
+<body>
+
+    <header>
+        <nav class="navigation">
+            <img src="images/logo.png" alt="logo">
+            <p>
+                Mosiah's Gym
+            </p>
+        </nav>
+
+    </header>
+
+    <main>
+        <div id="hero">
+            <img src="images/hero_large.jpg" alt="Hero-large">
+        </div>
+        <div id="heroBox">
+            <h1>Mosiah's Gym</h1>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Deleniti. Lorem ipsum dolor, sdsa.</p>
+            <button type="button"> Contact Us</button>
+        </div>
+        <section id="blackSection">
+            <img src="images/gympass-logo.png" alt="Gympass logo">
+            <img src="https://th.bing.com/th/id/R.be3c9f44a5937cf39a12c4996f1a646a?rik=kKTKE8OEXcDqQg&riu=http%3a%2f%2fwww.tri-techelectronics.com%2fwp-content%2fuploads%2f2018%2f08%2fiso-9001-logo.png&ehk=SMm5M683b7lAGV7G01SoGcN1ZZbup1vnfnLd%2bvH%2burE%3d&risl=&pid=ImgRaw&r=0" alt="iso 9001 logo">
+        </section>
+        <section id="about">
+            <img src="images/about_image.jpg" alt="Man exercising">
+            <div>
+                <h2>About US</h2>
+                <p>Welcome to Mosiah's Gym! Founded by Mosiah, our gym offers a supportive space for all fitness levels. With a variety of equipment and classes, we’re here to help you achieve your goals.</p>
+                <p>Our dedicated team of trainers is committed to providing personalized support in a positive, encouraging environment. We believe in fostering a strong community where every member feels valued.</p>
+                <p>Join us at Mosiah's Gym and experience top-notch facilities, expert guidance, and a vibrant fitness community. Let’s work together to make your fitness journey enjoyable and successful.</p>
+                <button type="button"> Contact Us</button>
+            </div>
+        </section>
+        <section id="team">
+            <h2>Our Team</h2>
+            <div>
+                <div>
+                    <img src="images/julia-rekamie-Z72YujnOrlY-unsplash.jpg" alt="">
+                    <legend>Julia Rekamie</legend>
+                </div>
+                <div>
+                    <img src="images/john-fornander-MdXkOhzL62k-unsplash.jpg" alt="">
+                    <legend>John Fornander</legend>
+                </div>
+                <div>
+                    <img src="images/diao-darius-HtJH8BPw_As-unsplash.jpg" alt="">
+                    <legend>Diao Darius</legend>
+                </div>
+            </div>
+        </section>
+        
+        <form id="bmiform">
+            <p>Hello <span id="username"></span></p>
+            <h3>BMI Calculator</h3>
+            
+            <label for="name">Name (optional): </label>
+            <input type="text" name="name" id="name">
+            <label for="height">Altura (1.8)* : </label>
+            <input type="text" name="height" id="height">
+            
+            
+            <label for="weight">weight* : </label>
+            <input type="text" name="weight" id="weight">
+            
+            <input type="submit" value="Calculate BMI">
+            
+            <p id="bmi"></p>
+            <p id="suggestion"></p>
+        </form>
+        <section id='scenarios'>
+            <img src="images/diet.jpg" alt="">
+            <div>
+                <h3>Scenarios</h3>
+                <h4>What's the best Diet to breackfast?</h4>
+                <p>A balanced breakfast should combine protein, healthy fats, and complex carbs. Try oatmeal with fruit and nuts, or Greek yogurt with berries. These choices provide energy and keep you full, supporting overall health and stable blood sugar levels.</p>
+                <h4>How long time is the best exercise?</h4>
+                <p>The best exercise duration typically ranges from <strong>30 to 60 minutes per session.</strong> Consistency and intensity matter more than the exact length, so aim for regular workouts that fit your fitness goals and schedule.</p>
+            </div>
+        </section>
+        <section id="info">
+            <div>
+                <p>Address, Country, State</p>
+                <p>street, number, Zip Code</p>
+                <p>Your@email.com</p>
+                <p>Other@email.com.</p>
+                <p>000-000-000</p>
+            </div>
+            <div>
+                <p>Plan 1 = $00</p>
+                <p>Plan 2 = $00</p>
+                <p>Plan 3 = $000</p>
+                <p>Plan 4 = $000</p>
+            </div>
+            
+        </section>
+    </main>
+    <footer>
+        <p><span id="currentYear"></span>  Mosiah Andrade</p>
+        <p id="last-modified"></p>
+    </footer>
+</body>
+</html>
