@@ -22,9 +22,13 @@
     </header>
 
     <main>
-        <div id="hero">
-            <img src="images/hero_large.jpg" alt="Hero-large">
-        </div>
+    
+        <picture id="hero">
+            
+            <source srcset="images/hero_mobile.jpg" media="(max-width: 900px) (max-height: 700) ">
+            <img src="images/hero_large.jpg" alt="Hero-large"  width="1690" height="700">
+        </picture>
+    
         <div id="heroBox">
             <h1>Mosiah's Gym</h1>
             <p>Transform Your Fitness Journey with Mosiah's Gym: Where Goals Become Achievements</p>
@@ -98,7 +102,7 @@
                 <p>Other@email.com.</p>
                 <p>000-000-000</p>
             </div>
-            <div>
+            <div id="plan">
                 <p>Plan 1 = $00</p>
                 <p>Plan 2 = $00</p>
                 <p>Plan 3 = $000</p>

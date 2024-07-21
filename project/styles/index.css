@@ -47,12 +47,8 @@ footer{
 }
 
 /*////////Hero////////*/
-#hero{
-    background-color: rgb(0, 0, 0);
 
-}
 #hero img{
-    width: 99vw;
     opacity: 80%;
     margin-bottom: -5px;
 }
@@ -274,6 +270,129 @@ input[type="submit"]:hover{
     margin-top: 20px;
 }
 /*////////////media query////////////*/
-@media (max-width: 70rem){
-    
+@media (max-width: 1000px){
+  
+
+header {
+    display: none;
+}
+
+#hero img {
+    position: absolute;
+    width: 100vw;
+    height: 80vw;
+}
+#heroBox, #about, #scenarios{flex-direction: column;
+}
+
+#heroBox {
+    position: relative;
+    top: 0%;
+    left: 0%;
+    width: 80vw;
+    background: rgba(0, 0, 0, 0.6);
+    color: #fff;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+#heroBox h1 {
+    font-size: 2rem;
+}
+
+#heroBox p {
+    font-size: 1rem;
+}
+
+#heroBox button {
+    background: var(--light-color);
+    color: #fff;
+    border: none;
+    padding: 0.5rem 1rem;
+    font-size: 1rem;
+    border-radius: 5px;
+    cursor: pointer;
+}
+#blackSection {
+    padding: 1rem;
+    margin-top: 35vw;
+}
+
+#about{
+    flex-direction: column-reverse;
+}
+#about img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+#about div p{
+    width: 90vw;
+}
+#about div {
+    margin: 20px;
+    width: 80vw;
+}
+
+#about h2, #team h2, #scenarios h3 {
+    font-size: 2rem;
+    margin-bottom: 1rem;
+}
+
+#about p {
+    font-size: 1rem;
+    margin-bottom: 0.5rem;
+}
+
+#team div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 1rem;
+}
+
+#team img {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-bottom: 0.5rem;
+}
+
+#bmiform {
+    width: 100vw;
+    box-shadow: none;
+    padding: 1rem;
+    border-radius: 5px;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+#bmiform input, #bmiform label {
+    display: block;
+    width: 80vw;
+    margin: 0.5rem auto;
+}
+
+#scenarios img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+}
+
+#scenarios div {
+    text-align: center;
+}
+
+#info #plan{
+    display: none;
+}
+footer {
+    color: #fff;
+    height: 5rem;
+    text-align: center;
+    padding: 1rem 0;
+    margin-top: 1rem;
+}
+
+
 }
